@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HandsOn6 - MaterializeCSS Framework </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Icon Font -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- jQuery CDN -->
+
+    <!-- Materialize CDN here -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+  <style>
+      .brand-logo {margin-left: 10px} 
+      img.activator {height: 200px}
+    </style>
+  
+ <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>   
+    <!-- JavaScript/jQuery Function Initialization inside <script> </script>  -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+     $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.parallax').parallax();
+    $('.slider').slider( {indicators:false, height:600 }  );
+  });
+      
+    </script>
+    
+    
+</head>
+<body>
+    <!-- 1. Navigation section -->
+<nav>
+    <div class="nav-wrapper red darken-3">
+      <a href="#!" class="brand-logo yellow-text text-darken-2">Joey Dranzik</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="portfolio.html">My Portfolio</a></li>
+        <li><a href="contact.html">Contact me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="portfolio.html">My Portfolio</a></li>
+        <li><a href="contact.html">Contact me</a></li>
+  </ul>
+   
+    <!-- 2. First Parallax section -->
+<div class="parallax-container valign-wrapper">
+      <div class="parallax"><img src="images/miami1.jpg"></div>
+      
+      <div class="container">
+        <!-- Page Content goes here -->
+        <div class="row">
+            <div class="col l12 m12 s12 white-text center-align">
+                <h4>Experienceced Font End Web Developers</h4>
+                <a class="waves-effect waves-light btn-large red darken-2 "><i class="material-icons right">mail</i>dranzija@miamioh.edu</a>
+            </div>
+            
+        </div>
+      </div>
+      
+</div>
+    <!-- 3. About Me section -->
+<div class="container">
+    <div class="row">
+        <h2> About Me</h2>
+    </div>
+    <div class="row">
+        <p class="flow-text">Hi My name is Joey. I am a fresman in College at Miami University. I am personaly interseted in Makeing videogames. Specificly, the design portion. I have always wanted to be able to make my own designs in a videogame</p>
+    </div>
+</div>
+    <!-- 4. Portfolio section -->
+<div class="container">
+    <div class="row">
+        <h2> My Portfolio</h2>    
+    </div>
+    
+      
+      <div class="row">
+       <!-- first portfolio -->
+        <div class="col l4 m6 s12">
+            <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="images/p1.png">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">legal Adviser<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+       
+        </div>
+        
+    <div class="row">
+       <!-- second portfolio -->
+        <div class="col l4 m6 s12">
+            <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="images/p2.png">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Travel Adviser<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+      
+       </div>
+    <div class="row">
+       <!-- therd portfolio -->
+        <div class="col l4 m6 s12">
+            <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="images/p3.png">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Happy Evangelist<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+       
+        </div>
+    </div>
+</div>
+    </div>
+    </div>
+    
+    <!-- images used for portfolio are from https://www.justinmind.com/web-design/portfolio -->
+    <!-- 5. Second Parallax section -->
+<div class="parallax-container valign-wrapper">
+      <div class="parallax"><img src="images/miami2.jpg"></div>
+      
+      <div class="container">
+        <!-- Page Content goes here -->
+        <div class="row">
+            <div class="col l12 m12 s12 white-text center-align">
+                <h4>Interested in developing a website with me</h4>
+                <a class="waves-effect waves-light btn-large red darken-2 "><i class="material-icons right">phone</i>(414)-559-5209</a>
+            </div>
+            
+        </div>
+      </div>
+      
+</div>
+   
+    <!-- 6. Contact Me section -->
+<div class="container">
+    <div class="row">
+        <h2> Contact Me</h2>
+    </div>
+    
+    
+    <!--better Form -->
+    
+    
+    <div class="row">
+    <form action="https://formsubmit.co/dranzija@maiamioh.edui" class=" col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" name="phone" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+     <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Questions/Comments?</label>
+        </div>
+      </div>
+      <!-- button submit -->
+       <button class="btn waves-effect waves-light red darken-2" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+       
+       
+        </form>
+    </div>
+            
+   </div>   
+
+    <!-- 7. Add Slide show to Your Page -->
+
+   <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="images/miamifall1.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="images/miamifall2.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="images/miamifall3.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="images/miamifall4.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+   
+    <!-- 8. Footer section -->
+<footer class="page-footer red darken-2">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            &copy; 2024 Joseph Dranzik, All Rights Reserved © 
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+    
+</body>
+</html>
